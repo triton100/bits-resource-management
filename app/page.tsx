@@ -7,7 +7,7 @@ export default function Home() {
       <header className="border-b">
         <div className="container flex h-16 items-center px-4">
           <div className="flex items-center gap-2 font-bold text-xl text-teal-600">
-            <span>BitsConnect</span>
+            <span>Bits Resource Management</span>
           </div>
           <div className="ml-auto flex items-center gap-4">
             <Link href="/login">
@@ -25,7 +25,7 @@ export default function Home() {
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
               <div className="space-y-4">
                 <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-                  Connect, Collaborate, Grow
+                  Bits Resource Management
                 </h1>
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Our internal platform helps you showcase your skills, find colleagues with complementary expertise,
@@ -48,7 +48,7 @@ export default function Home() {
                 <img
                   alt="Dashboard Preview"
                   className="aspect-video overflow-hidden rounded-xl object-cover object-center"
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/resource-management.jpg?height=400&width=600"
                 />
               </div>
             </div>

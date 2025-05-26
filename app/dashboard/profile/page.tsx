@@ -93,14 +93,14 @@ export default function ProfilePage() {
                 <div className="flex flex-col md:flex-row gap-6">
                   <div className="flex flex-col items-center gap-4">
                     <Avatar className="h-24 w-24">
-                      <AvatarImage src="/placeholder.svg" alt={formData.name} />
+                      <AvatarImage src="/avater.jpg" alt={formData.name} />
                       <AvatarFallback>
                       {formData.name
   ? formData.name.split(" ").map((n) => n[0]).join("")
   : "?"}
                       </AvatarFallback>
                     </Avatar>
-                    {isEditing && <Button variant="outline" size="sm">Change Photo</Button>}
+                    {/* {isEditing && <Button variant="outline" size="sm">Change Photo</Button>} */}
                   </div>
   
                   {isEditing ? (
@@ -176,13 +176,13 @@ export default function ProfilePage() {
                       </div>
                       <div>
                         <div className="text-sm font-medium">Account Type</div>
-                        <div className="text-sm text-muted-foreground">Employee</div>
+                        <div className="text-sm text-muted-foreground">Resource</div>
                       </div>
                     </div>
                   </div>
                 </div>
   
-                <div className="space-y-2">
+                {/* <div className="space-y-2">
                   <h3 className="text-sm font-medium">Password</h3>
                   <div className="rounded-md border p-4">
                     <div className="flex justify-between items-center">
@@ -190,20 +190,19 @@ export default function ProfilePage() {
                       <Button variant="outline" size="sm">Change Password</Button>
                     </div>
                   </div>
-                </div>
+                </div> */}
   
-                <div className="space-y-2">
+                {/* <div className="space-y-2">
                   <h3 className="text-sm font-medium">Notifications</h3>
                   <div className="rounded-md border p-4">
                     <div className="flex justify-between items-center">
-                      <div className="text-sm">Manage your notification preferences</div>
-                      <Button variant="outline" size="sm">Manage</Button>
+                     
                     </div>
                   </div>
-                </div>
+                </div> */}
               </CardContent>
               <CardFooter>
-                <Button variant="destructive" className="ml-auto">Delete Account</Button>
+                {/* <Button variant="destructive" className="ml-auto">Delete Account</Button> */}
               </CardFooter>
             </Card>
           </TabsContent>

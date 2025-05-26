@@ -34,19 +34,6 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
   const pathname = usePathname()
   const { toast } = useToast()
 
-  // useEffect(() => {
-  //   // Check authentication status from localStorage
-  //   const authStatus = localStorage.getItem("isAuthenticated")
-  //   const role = localStorage.getItem("userRole")
-
-  //   if (authStatus !== "true") {
-  //     router.push("/login")
-  //   } else {
-  //     setIsAuthenticated(true)
-  //     setUserRole(role)
-  //   }
-  // }, [router])
-
   const handleLogout = () => {
     localStorage.removeItem("isAuthenticated")
     localStorage.removeItem("userRole")
@@ -66,10 +53,8 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
     { name: "Skills", href: "/dashboard/skills", icon: Briefcase },
   ]
 
-  // Only show admin panel for admin users
   if (userRole === "admin") {
     return null;
-    // navigation.push({ name: "Admin Panel", href: "/admin", icon: ShieldCheck })
   }
 
   return (
@@ -79,7 +64,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
         <Sidebar className="hidden md:flex">
           <SidebarHeader className="p-4">
             <div className="flex items-center gap-2 font-bold text-xl text-teal-600">
-              <span>BitsConnect</span>
+              <span>Bits Resource Management</span>
             </div>
           </SidebarHeader>
           <SidebarContent>
@@ -111,7 +96,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
         >
           <div className="fixed inset-y-0 left-0 z-50 w-full max-w-xs bg-background p-6 shadow-lg">
             <div className="flex items-center justify-between">
-              <div className="font-bold text-xl text-teal-600">BitsConnect</div>
+              <div className="font-bold text-xl text-teal-600">Bits Resource Management</div>
               <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(false)}>
                 <X className="h-6 w-6" />
               </Button>

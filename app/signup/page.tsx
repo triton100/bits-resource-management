@@ -62,10 +62,17 @@ export default function SignupPage() {
 
   return (
     <div className="flex min-h-screen flex-col">
+        <header className="border-b">
+        <div className="container flex h-16 items-center px-4">
+          <div className="flex items-center gap-2 font-bold text-xl text-teal-600">
+            <span>Bits Resource Management</span>
+          </div>
+        </div>
+      </header>
       <div className="container flex flex-1 flex-col items-center justify-center px-4 py-12">
         <div className="mx-auto w-full max-w-md space-y-6">
           <div className="flex flex-col items-center space-y-2 text-center">
-            <Image src="/logo.png" alt="Bits Technologies Logo" width={180} height={60} priority />
+            {/* <Image src="/logo.png" alt="Bits Technologies Logo" width={180} height={60} priority /> */}
             <h1 className="text-3xl font-bold text-[#004E98]">Create your account</h1>
             <p className="text-gray-500">Sign up to access your dashboard</p>
           </div>
