@@ -231,10 +231,10 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
   const navigation = isAdmin
     ? [
         { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
-        { name: "Resources", href: "/dashboard/resources", icon: Users },
-        { name: "Skills Matrix", href: "/dashboard/skills-matrix", icon: Grid3X3 },
+        // { name: "Resources", href: "/dashboard/resources", icon: Users },
+        // { name: "Skills Matrix", href: "/dashboard/skills-matrix", icon: Grid3X3 },
         { name: "Learning Goals", href: "/dashboard/idp", icon: Target },
-        { name: "Settings", href: "/dashboard/settings", icon: Settings },
+        // { name: "Settings", href: "/dashboard/settings", icon: Settings },
       ]
     : [
         { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
