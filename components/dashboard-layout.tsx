@@ -240,7 +240,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
         { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
         { name: "My Profile", href: "/dashboard/profile", icon: User },
         { name: "Skills", href: "/dashboard/skills", icon: Briefcase },
-        { name: "Learning Goals", href: "/dashboard/idp", icon: Target },
+        { name: "Individual Development Plan", href: "/dashboard/idp", icon: Target },
       ]
 
   return (
@@ -250,7 +250,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
         <Sidebar className="hidden md:flex">
           <SidebarHeader className="p-4">
             <div className="flex items-center gap-2">
-              <Image src="/logo.png" alt="Bits Technologies" width={120} height={40} className="h-8 w-auto" />
+              <Image src="/reallogo.jpg" alt="Bits Technologies" width={180} height={40} className="h-12 w-auto rounded-[10px]" />
             </div>
           </SidebarHeader>
           <SidebarContent>

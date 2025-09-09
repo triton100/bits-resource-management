@@ -65,7 +65,7 @@ export default function ProfilePage() {
 
   return (
     <DashboardLayout>
-      <div className="space-y-6">
+      <div className="flex flex-col flex-1 min-h-screen p-6 space-y-6">
         <div>
           <h1 className="text-2xl font-bold tracking-tight">My Profile</h1>
           <p className="text-muted-foreground">Manage your personal information and account settings</p>

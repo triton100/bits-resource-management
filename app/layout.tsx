@@ -8,9 +8,9 @@ import { AuthProvider } from "@/context/auth-context" // ✅ import AuthProvider
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "BitsConnect - Internal Platform",
-  description: "Internal company platform for skills management",
-  generator: "v0.dev",
+  title: "Bits Resource Management",
+  description: "internal tool for resource management",
+  generator: "Sphamandla Mbuyazi",
 }
 
 export default function RootLayout({

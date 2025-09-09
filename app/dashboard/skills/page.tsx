@@ -324,7 +324,7 @@ export default function SkillsPage() {
 
   return (
     <DashboardLayout>
-      <div className="space-y-6">
+            <div className="flex flex-col flex-1 min-h-screen p-6 space-y-6">
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-2xl font-bold tracking-tight">My Skills</h1>
